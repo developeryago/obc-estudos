@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiro Form Ex</title>
+    <style>
+        input{
+            margin: 3px;
+        }
+        #txt{
+            display: flex;
+            margin:  3px auto -3px;
+        }
+        button{
+            margin-top: 6px;
+            margin-bottom: -3px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Cadastro da Liga dos Astronautas</h1>
+    <form action="" method="post" autocomplete="on">
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <label for="name">Nome: </label>
+            <input type="text" name="name" id="name"> <br>
+            <label for="mail">E-mail: </label>
+            <input type="email" name="mail" id="mail">
+            <label for="pass">Password: </label>
+            <input type="password" name="pass" id="pass" autocomplete="off"><br>
+            <label for="data">Data de nascimento: </label>
+            <input type="date" name="data" id="data">
+            <span>Gênero: </span>
+            <label for="rmasc">M</label>
+            <input type="radio" name="radio" id="rmasc">
+            <label for="rfem">F</label>
+            <input type="radio" name="radio" id="rfem"><br>
+            <label for="nation">Nacionalidade: </label>
+            <select name="nation" id="nation">
+                <option value="Russia">Rússia</option>
+                <option value="eua">EUA</option>
+                <option value="br">Brasil</option>
+            </select>
+            <fieldset>
+                <legend>Especificações</legend>
+                <label for="quali">Suas principais qualidades: </label>
+                <input type="checkbox" name="quali" id="int">Inteligência
+                <input type="checkbox" name="adp" id="adp">Adaptação
+                <input type="checkbox" name="res" id="res">Resistência
+                <input type="checkbox" name="edu" id="edu">Educação
+                <textarea name="txt" id="txt" cols="30" rows="10" placeholder="Porque você gostaria de ser um artronalta?"></textarea>
+            </fieldset>
+        <button type="submit">Enviar</button>
+        </fieldset>
+    </form> 
+</body>
+</html>
