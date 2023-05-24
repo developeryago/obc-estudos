@@ -29,10 +29,12 @@ function novaVaga(){
     }
 }
 function visuVaga(){
-    if (vaga == ""){
-        alert("Nenhuma vaga foi cadastrada até o momento!")
-    } else{
         const posição = prompt("Qual o índice da vaga que deseja vizualizar? ")
+        if (posição >= vaga.length || posição < 0){
+            alert("Opção inválida!" +
+            "\nCertifíque-se de que há vagas cadastradas e que o índice desejado exista")
+            return
+        }
         const vagas = vaga[posição]
         const candidatosEmTexto = vagas.candidatos.reduce(function(textoFinal, candiato){
             return textoFinal + "\n - " + candiato
@@ -43,13 +45,11 @@ function visuVaga(){
         "\nData limite: " + vagas.dataLimite +
         "\nQuantidade de candidatos: " + vagas.candidatos.length +
         "\nCandidatos inscritos: " + candidatosEmTexto)
-    }
-    
 }
 function novoCandidato(){
     const nCandidato = prompt("Qual o nome do novo candidato? ")
     const indice = parseFloat(prompt("Qual o índice da vaga que deseja cadastrá-lo? "))
-    if (indice >= vaga.length){
+    if (indice >= vaga.length || indice < 0){
         alert("Opção inválida!" +
         "\nCertifíque-se de que há vagas cadastradas e que o índice desejado exista")
         return
@@ -66,7 +66,7 @@ function novoCandidato(){
 }
 function excluirVaga(){
     const indiceEX = parseFloat(prompt("Qual o índice da vaga que deseja excluir? "))
-    if (indiceEX >= vaga.length){
+    if (indiceEX >= vaga.length || indiceEX < 0){
         alert("Opção inválida!" +
         "\nCertifíque-se de que há vagas cadastradas e que o índice desejado exista")
         return
