@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>escalção</title>
+</head>
+<body>
+    <h1>Escalção</h1>
+
+    <h3>Adicionar Jogador</h3>
+    <label for="name">Nome: </label>
+    <input type="text" name="name" id="name"><br>
+    <label for="position">Position: </label>
+    <input type="text" name="position" id="position"><br>
+    <label for="number">Número: </label>
+    <input type="text" name="number" id="number"><br>
+    <input id="btn-escalar" type="button" value="Escalar" name="escalar" onclick="addPlayer()">
+    <hr>
+
+    <h3>Remover Jogador</h3>
+    <label for="delete">Número</label>
+    <input type="text" name="delete" id="delete"><br>
+    <input type="button" value="Remover" id="btn-remove" onclick="removePlayer()">
+
+    <p id="escalacao"></p>
+    <script src="escalacao01.js"></script>
+    
+</body>
+</html>
