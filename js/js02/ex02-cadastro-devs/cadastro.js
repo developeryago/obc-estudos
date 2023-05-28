@@ -27,6 +27,7 @@ function createForm(){
     timeSmallInput.type = "radio"
     timeSmallInput.name = "radio"
     timeSmallInput.id = "0-2"
+    timeSmallInput.value = "0-2"
     timesmall.appendChild(timeSmallInput)
 
     const timeMedium = document.createElement("span")
@@ -35,6 +36,7 @@ function createForm(){
     timeMediumInput.type = "radio"
     timeMediumInput.name = "radio"
     timeMediumInput.id = "3-4"
+    timeMediumInput.value = "3-4"
     timeMedium.appendChild(timeMediumInput)
 
     const timeLarge = document.createElement("span")
@@ -43,6 +45,7 @@ function createForm(){
     timeLargeInput.type = "radio"
     timeLargeInput.name = "radio"
     timeLargeInput.id = "5+"
+    timeLargeInput.value = "5+"
     timeLarge.appendChild(timeLargeInput)
 
     pList.append(timeSpan, timesmall, timeMedium, timeLarge)
@@ -66,9 +69,9 @@ function createForm(){
 function insert(){
     const name = document.getElementById("name-input").value
     const tec = document.getElementById("tecInput").value
-    let time = ""
+    let time = ''
     document.querySelectorAll("input[name='radio']:checked").forEach(function(item){
-        time += " - " + item.value
+        time = item.value
     })
 
     devs.push({
