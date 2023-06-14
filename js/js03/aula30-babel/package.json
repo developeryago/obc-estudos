@@ -1,0 +1,17 @@
+{
+  "name": "aula30-babel",
+  "version": "1.0.0",
+  "description": "Estudos sobre compilador Babel",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "babel": " babel src --out-dir dist"
+  },
+  "author": "developeryago",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/cli": "^7.22.5",
+    "@babel/core": "^7.22.5",
+    "@babel/preset-env": "^7.22.5"
+  }
+}
