@@ -2,3 +2,8 @@ body{
     background-color: #232323;
     color: #fafafa;
 }
+
+h1{
+    text-align: center;
+    padding: 2rem;
+}
