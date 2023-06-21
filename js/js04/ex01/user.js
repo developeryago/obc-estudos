@@ -14,6 +14,5 @@
     }
 }
 
-const Yago = new User("Yago Machado", "contato.yagomachado@outlook.com", 12345678)
-console.log(Yago)
-Yago.login("contato.yagomachado@outlook.com", 12345678)
+module.exports = User
+

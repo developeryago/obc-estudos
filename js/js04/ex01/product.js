@@ -14,7 +14,4 @@
     }
 }
 
-const ps5 = new Product("Playstation 5", "Console de video-game", 4000)
-console.log(ps5)
-console.log(ps5.addToStock(10))
-console.log(ps5.calculateDiscont(10))
+module.exports = Product
