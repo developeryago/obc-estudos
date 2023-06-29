@@ -1,6 +1,6 @@
 module.exports = class Deposit {
-    constructor(value, date){
+    constructor(value){
         this.value = value
-        this.date = date 
+        this.date = new Date() 
     }
 }

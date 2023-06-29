@@ -1,8 +1,8 @@
-module.exports =  class Transfer{
-    constructor(userSubmitted, userReceived, value, date) {
-        this.userSubmitted = userSubmitted
-        this.userReceived = userReceived
-        this.value = value 
-        this.date = date 
+module.exports = class Transfer {
+    constructor(fromUser, toUser, value) {
+      this.fromUser = fromUser
+      this.toUser = toUser
+      this.value = value
+      this.createdAt = new Date()
     }
 }
