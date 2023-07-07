@@ -22,8 +22,16 @@ function validetedEmail(e) {
 }
 
 function validedPass(password) {
-    const regex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
-    return regex.test(password);
+    if (
+        password.length < 8 || 
+        !password.match(/[a-z]/) || 
+        !password.match(/[A-Z]/) || 
+        !password.match(/[0-9]/) ||
+        !password.match(/[^a-zA-Z0-9\s]/)
+    ) {
+        const err = new Error('Senha inválida.')
+        throw err
+    }
   }
   
   
