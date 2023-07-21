@@ -8,6 +8,7 @@
 *{
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
 }
 
 body{
@@ -45,5 +46,17 @@ form label {
 }
 
 form button {
-    
+    padding: .35rem;
+    margin: 0 0 .5rem .3rem;
+    border-radius: .5rem;
+    border: none;
+}
+
+form button:hover {
+    background-color: var(--cor-tranferência);
+}
+
+#container-btn {
+    margin-top: .5rem;
+    padding: 0 .3rem;
 }

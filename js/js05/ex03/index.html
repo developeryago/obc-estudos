@@ -14,14 +14,16 @@
         <div id="container">
             <form action="" method="post">
                 <fieldset>
-                    <legend>Saldo em Conta: <span id="saldo">0</span></legend>
+                    <legend>Saldo em Conta: <span id="balance" value="0">0</span></legend>
                     <label for="value">Valor: </label>
                     <input type="number" name="value" id="value"> <br>
                     <input type="radio" name="radio" id="deposit"><label for="deposit">Depósito</label>
                     <input type="radio" name="radio" id="transfer"><label for="transfer">Tranferência</label>
                     <input type="radio" name="radio" id="withdraw"><label for="withdraw">Saque</label>
-                    <button type="submit">Enviar</button>
-                    <button type="reset">Apagar</button>
+                    <div id="container-btn">
+                        <button type="submit">Enviar</button>
+                        <button type="reset">Apagar</button>
+                    </div>
                 </fieldset>
             </form>
         </div>
