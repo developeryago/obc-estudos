@@ -1,9 +1,3 @@
 {
-  "action": [
-    {
-      "balance": "9",
-      "type": "deposit",
-      "id": 1
-    }
-  ]
+  "action": []
 }

@@ -3,6 +3,7 @@ const deposit = document.getElementById("deposit")
 const transfer = document.getElementById("transfer")
 const withdraw = document.getElementById("withdraw")
 let balance = 0
+let countId = 0 
 
 
 function renderAction (actionData) {
@@ -10,9 +11,14 @@ function renderAction (actionData) {
     action.id = `action-${actionData.id}`
     action.type = actionData.type
     action.value = actionData.balance
-    action.textContent = `${actionData.type} - ${actionData.balance}`
-    const bntDelete = document.createElement("button")
-    bntDelete.textContent = "Delete"
+    action.textContent = `${actionData.name} - ${actionData.type} (R$${actionData.balance})`
+
+    const div = document.createElement("div")
+    div.id = countId
+
+    const editBtn = editAction(actionData)
+    const bntDelete = document.createElement("button") 
+    bntDelete.textContent = "Delete from history"
     bntDelete.id = actionData.id
     if (actionData.type === "deposit") {
         balance += Number(actionData.balance)
@@ -23,8 +29,11 @@ function renderAction (actionData) {
         balance -= Number(actionData.balance)
     }
     document.querySelector("#balance").textContent = balance
-    document.querySelector("#extrato").append(action, bntDelete)
-    bntDelete.addEventListener("click", async () => {
+    const br = document.createElement("br")
+    
+    div.append(action, bntDelete, editBtn, br)
+    document.querySelector("#extrato").append(div)
+    bntDelete.addEventListener("click", async (ev) => {
         const deleteActions = await fetch(`http://localhost:3000/action/${bntDelete.id}`, {
             method: "DELETE",
             headers: {
@@ -32,8 +41,9 @@ function renderAction (actionData) {
             }
         }).then( resp => resp.json())
         balance -= actionData.balance
-        document.querySelector("#balance").textContent =balance 
-        document.querySelector("#extrato").remove(action,bntDelete)
+        document.querySelector("#balance").textContent = balance 
+        
+        document.querySelector("#extrato").removeChild(div)
     })
 }
 
@@ -47,8 +57,9 @@ document.addEventListener("DOMContentLoaded", fetchAction())
 const form = document.querySelector("form")
 form.addEventListener("submit", async (ev) =>{
     ev.preventDefault()
-
+    countId ++
     const actionData = {
+        name: document.querySelector("#name").value,
         balance: document.querySelector("#value").value,
         type: document.querySelector(`input[name=radio]:checked`).id
     }
@@ -64,3 +75,15 @@ form.addEventListener("submit", async (ev) =>{
     document.querySelector("form").reset()
     renderAction(savedAction)
 })
+
+function editAction (actionData) {
+    const editBtn = document.createElement("button")
+    editBtn.classList.add("edit-btn")
+    editBtn.id = "edit"
+    editBtn.textContent = "Edit"
+    editBtn.addEventListener("click", () => {
+        document.querySelector("#value").value = actionData.balance
+        document.querySelector("#name").value = actionData.name
+    })
+    return editBtn
+}

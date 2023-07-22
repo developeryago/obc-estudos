@@ -4,27 +4,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Banco DigiDev</title>
+    <title>My Finances</title>
     <link rel="stylesheet" href="style.css">
     <script src="index.js" defer></script>
 </head>
 <body>
     <main>
-        <h1>Banco DigiDev</h1>
+        <h1>My Finances</h1>
         <div id="container">
-            <form action="" method="post">
-                <fieldset>
-                    <legend>Saldo em Conta: <span id="balance" value="0">0</span></legend>
-                    <label for="value">Valor: </label>
+            <form action="" method="post" autocomplete="off">
+               
+                    <legend>Account Balance: <span id="balance" value="0">0</span></legend>
+
+                    <label for="name">Name: </label>
+                    <input type="text" name="name" id="name"> <br>
+                    <label for="value">Value: </label>
                     <input type="number" name="value" id="value"> <br>
-                    <input type="radio" name="radio" id="deposit"><label for="deposit">Depósito</label>
-                    <input type="radio" name="radio" id="transfer"><label for="transfer">Tranferência</label>
-                    <input type="radio" name="radio" id="withdraw"><label for="withdraw">Saque</label>
+                    
+                    <input type="radio" name="radio" id="deposit"><label for="deposit">Deposit</label>
+                    <input type="radio" name="radio" id="transfer"><label for="transfer">Transfer</label>
+                    <input type="radio" name="radio" id="expense"><label for="expense">Expense</label>
                     <div id="container-btn">
-                        <button type="submit">Enviar</button>
-                        <button type="reset">Apagar</button>
+                        <button type="submit">Submit</button>
+                        <button type="reset">Delete</button>
                     </div>
-                </fieldset>
+         
             </form>
         </div>
         <section id="extrato"></section>
