@@ -22,6 +22,7 @@ function renderAction (actionData) {
     bntDelete.id = actionData.id
     if (actionData.type === "deposit") {
         balance += Number(actionData.balance)
+        // action.value.classList
         console.log(balance)
     } else if (actionData.type === "transfer") {
         balance -= Number(actionData.balance)
