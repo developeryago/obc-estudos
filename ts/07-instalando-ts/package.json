@@ -1,0 +1,16 @@
+{
+  "dependencies": {
+    "typescript": "^5.1.6"
+  },
+  "name": "07-instalando-ts",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "biuld": "npx tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "developeryago",
+  "license": "MIT",
+  "description": ""
+}
