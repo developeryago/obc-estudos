@@ -25,5 +25,9 @@ function acelerate(targetSpeed: number, spaceship: { name: string, speed: number
 const spaceshipName = prompt("Insira o nome da nave: ")
 const spaceshipCapitain = prompt("Insira o nome do piloto: ")
 
-sandSpaceship(spaceshipName, spaceshipCapitain)
+const MilleniumFalcon = sandSpaceship(spaceshipName, spaceshipCapitain)
+
+const spped = Number(prompt("Digite a velocidade que deseja alcançar: "))
+
+acelerate(spped, MilleniumFalcon)
 

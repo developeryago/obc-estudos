@@ -21,5 +21,7 @@ function acelerate(targetSpeed, spaceship) {
     }
 }
 var spaceshipName = prompt("Insira o nome da nave: ");
-var spaceshipCapitain = prompt("Isira o nome do piloto: ");
-sandSpaceship(spaceshipName, spaceshipCapitain);
+var spaceshipCapitain = prompt("Insira o nome do piloto: ");
+var MilleniumFalcon = sandSpaceship(spaceshipName, spaceshipCapitain);
+var spped = Number(prompt("Digite a velocidade que deseja alcançar: "));
+acelerate(spped, MilleniumFalcon);
