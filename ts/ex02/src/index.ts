@@ -110,7 +110,7 @@ function promptValidSituation() {
         const situationInput = prompt(`Informe a situação do Planeta:
         1) Habitado
         2) Habitável
-        3) nabitável
+        3) Inabitável
         4) Inexplorado`)
 
         switch (situationInput) {
