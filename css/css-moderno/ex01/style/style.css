@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 3rem;
+    align-items: center;
+}
+
+header img {
+    height: 3rem;
+}
+
+button {
+    font-size: 1rem;
+    padding: .6rem .4rem;
+    border-radius: .7rem;
+    box-shadow: 1px -1px white;
+    border: 1px solid white;
+    color: white;
+    background-color: black;
+    margin: 0 .1rem;
+}
+
+button:hover {
+    box-shadow: 1px -1px #FF003A;
+    border: 1px solid #FF003A;
+}
