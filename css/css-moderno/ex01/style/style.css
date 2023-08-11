@@ -25,9 +25,11 @@ button {
     color: white;
     background-color: black;
     margin: 0 .1rem;
+    cursor: pointer;
+    transition: 0.4s;
 }
 
 button:hover {
-    box-shadow: 1px -1px #FF003A;
-    border: 1px solid #FF003A;
+    box-shadow: 1px -1px #f04;
+    border: 1px solid #f04;
 }

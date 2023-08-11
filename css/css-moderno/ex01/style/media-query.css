@@ -9,14 +9,10 @@
         display: block;
     }
 
-    /* img {
-        display: block;
-        text-align: center;
-    } */
-
-    #img-content {
+    .img-content {
         text-align: center;
     }
+    
     #headerBtn {
         display: flex;
         justify-content: center;
