@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: lightgray;
+}
+
+header, footer {
+    text-align: center;
+    font-size: 3rem;
+    background-color: white;
+}
+
+#flex-container {
+    display: flex;
+    height: 80%;
+    flex-wrap: wrap;
+    gap: 0 1.5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-itens {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    width: 10rem;
+    height: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
