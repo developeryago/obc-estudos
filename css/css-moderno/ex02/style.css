@@ -12,7 +12,8 @@ body {
 main {
     display: flex;
     flex-direction: column;
-    /* height: 100vh; */
+    flex: 1 0 400px;
+    min-height: 94vh;
 }
 
 header, footer {
@@ -35,16 +36,16 @@ header, footer {
     background-color: white;
     color: black;
     border: 2px solid black;
-    width: 20%;
-    height: 10rem;
+    width: 20rem;
+    height: 8rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-basis: 15rem;
+    flex-basis: 14rem;
 }
 
 @media (min-width: 880px) {
-    #flex-container {
-        height: 82vh;
-    }
+    /* main {
+        flex: 2 0 800px;
+    } */
 }
