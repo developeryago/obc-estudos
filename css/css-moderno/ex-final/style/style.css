@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 auto;
+}
+
+header {
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .7rem 1rem;
+}
+header img {
+    height: 2.5rem;
+}
+header button {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: .5rem;
+    border-radius: .7rem;
+    transition: .7s;
+}
+header button:hover {
+    background-color: white;
+    color: black;
+}
