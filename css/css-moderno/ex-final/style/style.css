@@ -18,7 +18,6 @@ header, footer {
     justify-content: space-between;
     align-items: center;
     padding: .7rem 1rem;
-    width: 100vw;
 }
 header img, footer img {
     height: 2.5rem;
@@ -36,9 +35,10 @@ header button:hover {
     color: black;
 }
 
-h2 {
+#backToTop {
     text-align: center;
     padding-top: 1rem;
+    transition: 1s;
 }
 
 p#welcome {
@@ -65,14 +65,26 @@ p#welcome {
     width: 70%;
 }
 .card {
-    padding: 1rem;
+    width: 88%;
+    border-radius: 2rem;
+    overflow: hidden;
+    transition: .8s;
+
+}
+.card:hover {
+    border: .5px solid #CA0136;
+}
+.card p {
+    padding: .5rem;
 }
 div.card img {
     height: 13rem;
     width: 100%;
-    border-radius: 1rem;
+    position: center center;
 }
-
+.card-title {
+    text-indent: .5rem;
+}
 div#cards-extra {
     background-color: black;
     color: white;
@@ -80,6 +92,7 @@ div#cards-extra {
     display: flex;
     flex-direction: column;
     align-items: center;
+    max-width: 100vw;
 }
 div#cards-extra p {
     text-align: center;
@@ -88,7 +101,8 @@ div#cards-extra p {
 }
 div.extra-card img {
     height: 9rem;
-    width: 15rem;
+    width: 100%;
+    border-radius: 1rem;
 }
 
 footer a {

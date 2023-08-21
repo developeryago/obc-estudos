@@ -1,14 +1,13 @@
 @charset "UTF-8";
 
-@media (max-width: 1380px) {
+@media (max-width: 1300px) {
     #cards-grid {
         grid-template-columns: repeat(2, 1fr);
         gap: .5rem;
     }
 
     div.card img {
-        width: 26rem;
-        height: 16rem;
+        height: 14rem;
     }
 
     div#cards-extra {
@@ -16,28 +15,36 @@
     }
 }
 
-@media (max-width: 1300px) {
+@media (max-width: 980px) {
+    #main-content {
+        padding: 1rem 3rem;
+    }
     #cards-grid {
         grid-template-columns: repeat(1, 1fr);
-        width: 60%;
+        width: 58%;
+        gap: .2rem;
     }
 
     div.card img {
-        width: 40rem;
-        height: 30rem;
+        height: 20rem;
     }
     div.card p {
-        font-size: 1.2rem;
+        font-size: 1.4rem;
         padding-top: .5rem;
     }
-
+    .card {
+        padding-bottom: 2.5rem;
+    }
+    .card-title {
+        font-size: 2rem;
+    }
     div.extra-card img  {
         height: 15rem;
         width: 20rem;
     }
 }
 
-@media (max-width: 1144px) {
+@media (max-width: 950px) {
     #main-content {
         display: block;
         margin: auto;
@@ -49,9 +56,35 @@
         margin: auto;
         width: 65%;
     }
+}
 
-    div.extra-card img  {
-        width: 40rem;
-        height: 30rem;
+@media (max-width: 655px) {
+    header {
+        display: block;
+        text-align: center;
+    }
+    /* #cards-grid{
+        width: 90%;
+    } */
+    div.card img {
+        width: 100%;
+        height: 80%;
+    }
+    #headerBtn {
+        margin-top: .5rem;
+    }
+
+    #welcome {
+        padding-bottom: 1.5rem;
+    }
+}
+
+@media (max-width: 450px) {
+    footer {
+        display: block;
+        text-align: center;
+    }
+    footer p {
+        padding: 1rem;
     }
 }
