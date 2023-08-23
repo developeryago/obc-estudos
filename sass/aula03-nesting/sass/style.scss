@@ -1,0 +1,20 @@
+.classe1 {
+    ul {
+        background-color: darkgray;
+    }
+    li {
+        background-color: black;
+        color: white;
+    }
+    button {
+        background-color: #a01010;
+        color: white;
+        cursor: pointer;
+        border: none;
+        &:hover {
+            background-color: white;
+            color: #a01010;
+            transition: .5s;
+        }
+    }
+}
