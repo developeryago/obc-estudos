@@ -1,0 +1,20 @@
+.btn {
+    width: 8rem;
+    padding: .7rem 0;
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-direction: column;
+
+    &.btn-roxo {
+        background-color: purple;
+        color: white;
+    }
+    &.btn-vermelho {
+        background-color: rgb(247, 39, 39);
+    }
+    &.btn-verde {
+        background-color: lightgreen;
+    }
+}

@@ -1,15 +1,23 @@
-function imcCalculate(weight, height) {
-    return new Promise((resolve, reject) => {
-        if (isNaN(weight) || isNaN(height)) {
-            reject("Os valores de peso e altura precisam ser numéricos!")
-        } else {
-            resolve(weight / (height * height))
-        }
-    })
+async function imcCalculate(weight, height) {
+    if (isNaN(weight) || isNaN(height)) {
+         return Promise.reject("Os valores de peso e altura precisam ser numéricos!")
+    }
+    return  weight / (height * height)
+
+    // return new Promise((resolve, reject) => {
+    //     if (isNaN(weight) || isNaN(height)) {
+    //         reject("Os valores de peso e altura precisam ser numéricos!")
+    //     } else {
+    //         resolve(weight / (height * height))
+    //     }
+    // })
 }
 
-function execute(weight, height) {
-    imcCalculate(weight, height).then((result) => {
+ async function execute(weight, height) {
+     
+    //  .then((result) => {
+    try{
+        const result = await imcCalculate(weight, height)
         setTimeout(() => {
             if (result < 18.5) {
             console.log(`Seu IMC deu ${result}, com isso você está em estado de magreza`)
@@ -22,11 +30,14 @@ function execute(weight, height) {
             } else {
                 console.log(`Seu IMC deu ${result}, com isso você está em estado de obesidade grave`)
             }
-    }, 1000 * 2)
-    }).catch((err) => {
-        console.log(err)
-        })   
-    console.log("Evidenciando assincronismo.")
+        }, 1000 * 2)
+    } catch(err) {
+    console.log(err)
+    }   
+console.log("Evidenciando assincronismo.")
+        
+    // })
+    
 }
 
 execute(68, 1.72)

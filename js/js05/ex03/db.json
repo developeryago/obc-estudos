@@ -1,0 +1,10 @@
+{
+  "action": [
+    {
+      "name": "Salário",
+      "balance": "2000",
+      "type": "deposit",
+      "id": 1
+    }
+  ]
+}
