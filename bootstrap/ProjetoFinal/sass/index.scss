@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+body{
+    // background-color: black;
+}
+
+nav.navbar{
+    padding-left: 5.5rem;
+}
+.navbar-brand {
+    max-height: 3rem;
+}
+#navbarNav li a {
+    color: white;
+}
+
+div.img-01 {
+    background-image: url("../img/home/01.jpg");
+    height: 100vh;
+    background-position:center center;
+}
