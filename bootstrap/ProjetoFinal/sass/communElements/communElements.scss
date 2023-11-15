@@ -1,0 +1,57 @@
+ *{
+    color: white;
+ }
+
+header{
+    font-size: 1rem;
+    font-weight: bold;
+}
+.navbar-brand {
+    max-height: 3rem;
+}
+.container00 {
+    min-height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.logoPC {
+    width: 240px;
+    margin-left: -10px;
+}
+
+.navbar-toggler {
+    color: white;
+}
+
+.titllePadding {
+   padding-top: 200px;
+}
+.shortTitle {
+    max-width: 550px;
+    margin-bottom: -25px;
+}
+.mediumTitle {
+    max-width: 650px;
+    margin-bottom: -25px;
+}
+
+#button {
+    padding: $padding-button;
+}
+.footer {
+    background-color: black;
+    & a {
+        text-decoration: none;
+        color: white;
+        padding-right: 1rem;
+        & :hover {
+            color: $link-hover;
+            cursor: pointer;
+        }
+    }
+    & .copyYago {
+        color: $copy-color;
+    }
+}

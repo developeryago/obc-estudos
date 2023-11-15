@@ -1,19 +1,113 @@
-nav.navbar {
-  padding-left: 5.5rem;
+* {
+  color: white;
+}
+
+header {
+  font-size: 1rem;
+  font-weight: bold;
 }
 
 .navbar-brand {
   max-height: 3rem;
 }
 
-#navbarNav li a {
+.container00 {
+  min-height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.logoPC {
+  width: 240px;
+  margin-left: -10px;
+}
+
+.navbar-toggler {
   color: white;
 }
 
-div.img-01 {
-  background-image: url("../img/home/01.jpg");
-  height: 100vh;
-  background-position: center center;
+.titllePadding {
+  padding-top: 200px;
+}
+
+.shortTitle {
+  max-width: 550px;
+  margin-bottom: -25px;
+}
+
+.mediumTitle {
+  max-width: 650px;
+  margin-bottom: -25px;
+}
+
+#button {
+  padding: 15px 30px;
+}
+
+.footer {
+  background-color: black;
+}
+.footer a {
+  text-decoration: none;
+  color: white;
+  padding-right: 1rem;
+}
+.footer a :hover {
+  color: #b9b9b9;
+  cursor: pointer;
+}
+.footer .copyYago {
+  color: #555252;
+}
+
+@media (max-width: 405px) {
+  .logoPC {
+    width: 180px;
+    margin-top: 15px;
+  }
+  .footer {
+    font-size: 0.8rem;
+  }
+}
+@media (max-width: 350px) {
+  .logoPc {
+    width: 150px;
+    margin-top: 15px;
+  }
+}
+@media (max-width: 750px) {
+  .titlePadding {
+    padding-top: 120px;
+  }
+  .shortTitle, .mediumTitle {
+    width: auto;
+    font-size: 50px;
+  }
+}
+.container00.container01 {
+  background-image: url("../../img/home/01.jpg");
+}
+
+.container00.container02 {
+  background-image: url("../../img/home/03.jpg");
+}
+
+.container00.container03 {
+  background-image: url("../../img/home/02.gif");
+}
+
+.container00.container04 {
+  background-image: url("../../img/home/04.jpg");
+}
+
+.arrowDown {
+  display: inline-block;
+  width: 8rem;
+}
+
+#navbarNav li a {
+  color: white;
 }
 
 /*# sourceMappingURL=index.css.map */

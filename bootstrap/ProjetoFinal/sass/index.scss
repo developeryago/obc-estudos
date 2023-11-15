@@ -1,21 +1,9 @@
 @charset "UTF-8";
 
-body{
-    // background-color: black;
-}
+@import "./communElements/variables.scss";
+@import "./communElements/communElements.scss";
+@import "./communElements/media-query.scss";
+@import "./pages/home.scss";
+@import "./pages/falcon9.scss";
+@import "./pages/humanSpace.scss";
 
-// nav.navbar{
-//     padding-left: 5.5rem;
-// }
-.navbar-brand {
-    max-height: 3rem;
-}
-#navbarNav li a {
-    color: white;
-}
-
-div.img-01 {
-    background-image: url("../img/home/01.jpg");
-    height: 100vh;
-    background-position:center center;
-}
