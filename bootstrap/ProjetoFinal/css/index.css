@@ -3,8 +3,11 @@
 }
 
 header {
-  font-size: 1rem;
+  font-size: 0.7rem;
   font-weight: bold;
+}
+header .nav-link {
+  margin: 0.8rem;
 }
 
 .navbar-brand {
@@ -23,8 +26,9 @@ header {
   margin-left: -10px;
 }
 
-.navbar-toggler {
-  color: white;
+i {
+  background-color: white;
+  padding: 0;
 }
 
 .titllePadding {
