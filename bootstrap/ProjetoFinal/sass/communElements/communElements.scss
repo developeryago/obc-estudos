@@ -57,5 +57,11 @@ i{
     }
     & .copyYago {
         color: $copy-color;
+        text-decoration: none;
+        cursor: pointer;
+        &:hover {
+            color: $link-hover;
+            border-bottom: 1px solid $copy-color;
+        }
     }
 }

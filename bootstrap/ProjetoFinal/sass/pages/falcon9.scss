@@ -1,3 +1,4 @@
+
 .container05 {
     background-image: url("../../img/falcon9/01.jpg");
 }
@@ -7,27 +8,77 @@
 .container07 {
     background-image: url("../../img/falcon9/08.jpg");
 }
+
 .numbers {
     background-color: black;
+    height: 30vh;
+    padding-top: 3rem;
+    .titleNumb {
+        font-size: 90px;
+    }
+    .subTitleNumb {
+        font-size: 20px;
+    }
+}
+
+.desciptionFalcon9 {
+    font-size: 22px;
+    width: 640px;
+    line-height: 50px;
+}
+
+.overViewPosition {
+    width: 500px;
+    margin-left: 13%;
+    margin-top: 13%;
+}
+
+.merlin {
+    margin-left: 13%;
+    width: 500px;
+    padding-top: 7%;
 }
 .h1 {
     font-weight: bold;
     font-size: 4rem;
 }
 
-.carousel01 {
-    background: url("../../img/falcon9/03.jpg");
+
+.container00 {
+    &.carousel01 {
+        background-image: url("../../img/falcon9/03.jpg");
+    }
+    &.carousel02 {
+        background-image: url("../../img/falcon9/04.jpg");
+    }
+    &.carousel03 {
+        background-image: url("../../img/falcon9/05.jpg");
+    }
+    &.carousel04 {
+        background-image: url("../../img/falcon9/06.jpg");
+    }
+    &.carousel05 {
+        background-image: url("../../img/falcon9/07.jpg");
+    }
+    &.carousel00 {
+        height: 90vh;
+    }
 }
-.carousel02 {
-    background: url("../../img/falcon9/04.jpg");
-}
-.carousel03 {
-    background: url("../../img/falcon9/05.jpg");
-}
-.carousel04 {
-    background: url("../../img/falcon9/06.jpg");
-}
-.carousel05 {
-    background: url("../../img/falcon9/07.jpg");
+.dark {
+    background-color: black;
+    a {
+        color: $copy-color;
+        text-decoration: none;
+        cursor: pointer;
+        &:hover {
+            color: $link-hover;
+            border-bottom: 1px solid $copy-color;
+        }
+    }
+    button {
+        margin-right: 10px;
+        margin-top: 5px;
+        border: 2px solid white;
+    }
 }
 

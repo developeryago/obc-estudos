@@ -63,6 +63,12 @@ i {
 }
 .footer .copyYago {
   color: #555252;
+  text-decoration: none;
+  cursor: pointer;
+}
+.footer .copyYago:hover {
+  color: #b9b9b9;
+  border-bottom: 1px solid #555252;
 }
 
 @media (max-width: 405px) {
@@ -128,6 +134,32 @@ i {
 
 .numbers {
   background-color: black;
+  height: 30vh;
+  padding-top: 3rem;
+}
+.numbers .titleNumb {
+  font-size: 90px;
+}
+.numbers .subTitleNumb {
+  font-size: 20px;
+}
+
+.desciptionFalcon9 {
+  font-size: 22px;
+  width: 640px;
+  line-height: 50px;
+}
+
+.overViewPosition {
+  width: 500px;
+  margin-left: 13%;
+  margin-top: 13%;
+}
+
+.merlin {
+  margin-left: 13%;
+  width: 500px;
+  padding-top: 7%;
 }
 
 .h1 {
@@ -135,24 +167,41 @@ i {
   font-size: 4rem;
 }
 
-.carousel01 {
-  background: url("../../img/falcon9/03.jpg");
+.container00.carousel01 {
+  background-image: url("../../img/falcon9/03.jpg");
+}
+.container00.carousel02 {
+  background-image: url("../../img/falcon9/04.jpg");
+}
+.container00.carousel03 {
+  background-image: url("../../img/falcon9/05.jpg");
+}
+.container00.carousel04 {
+  background-image: url("../../img/falcon9/06.jpg");
+}
+.container00.carousel05 {
+  background-image: url("../../img/falcon9/07.jpg");
+}
+.container00.carousel00 {
+  height: 90vh;
 }
 
-.carousel02 {
-  background: url("../../img/falcon9/04.jpg");
+.dark {
+  background-color: black;
 }
-
-.carousel03 {
-  background: url("../../img/falcon9/05.jpg");
+.dark a {
+  color: #555252;
+  text-decoration: none;
+  cursor: pointer;
 }
-
-.carousel04 {
-  background: url("../../img/falcon9/06.jpg");
+.dark a:hover {
+  color: #b9b9b9;
+  border-bottom: 1px solid #555252;
 }
-
-.carousel05 {
-  background: url("../../img/falcon9/07.jpg");
+.dark button {
+  margin-right: 10px;
+  margin-top: 5px;
+  border: 2px solid white;
 }
 
 /*# sourceMappingURL=index.css.map */
