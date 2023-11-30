@@ -1,14 +1,4 @@
 
-.container05 {
-    background-image: url("../../img/falcon9/01.jpg");
-}
-.container06 {
-    background-image: url("../../img/falcon9/02.jpg");
-}
-.container07 {
-    background-image: url("../../img/falcon9/08.jpg");
-}
-
 .numbers {
     background-color: black;
     height: 30vh;
@@ -30,14 +20,25 @@
 .overViewPosition {
     width: 500px;
     margin-left: 13%;
-    margin-top: 13%;
+    margin-top: 18%;
 }
+
+.titllePadding{
+    .h1 {
+        font-size: 5rem;
+    }
+    .subTitleFalcon {
+        padding-top: 2rem;   
+    }
+}
+
 
 .merlin {
     margin-left: 13%;
     width: 500px;
     padding-top: 7%;
 }
+
 .h1 {
     font-weight: bold;
     font-size: 4rem;
@@ -45,6 +46,15 @@
 
 
 .container00 {
+    &.container05 {
+        background-image: url("../../img/falcon9/01.jpg");
+    }
+    &.container06 {
+        background-image: url("../../img/falcon9/02.jpg");
+    }
+    &.container07 {
+        background-image: url("../../img/falcon9/08.jpg");
+    }
     &.carousel01 {
         background-image: url("../../img/falcon9/03.jpg");
     }
@@ -60,10 +70,17 @@
     &.carousel05 {
         background-image: url("../../img/falcon9/07.jpg");
     }
-    &.carousel00 {
-        height: 90vh;
+}
+
+.carousel-item {
+    h5 {
+        background-color: black;
+    }
+    .carousel00 {
+        height: 100vh;
     }
 }
+
 .dark {
     background-color: black;
     a {

@@ -9,9 +9,13 @@ header{
         margin: .8rem;
     }
 }
-.navbar-brand {
-    max-height: 3rem;
+nav {
+    background-color: transparent;
+    .navbar-brand {
+        max-height: 3rem;
+    }
 }
+
 .container00 {
     min-height: 100vh;
     background-size: cover;
@@ -24,9 +28,12 @@ header{
     margin-left: -10px;
 }
 
-i{
-    background-color: white;
+li.nav-item a{
+    color: white;
     padding: 0;
+}
+li.active a {
+    color: white;
 }
 
 .titllePadding {

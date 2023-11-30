@@ -24,4 +24,47 @@
         width: auto;
         font-size: 50px;
     }
+    
+}
+
+@media (max-width: 768px) {
+    .numbers {
+        // display: flex;
+        flex-direction: column;
+        // align-items: center;
+        // justify-content: center;
+        .titleNumb {
+            font-size: 60px;
+        } 
+        .subTitleNumb {
+            font-size: 18px;
+        }
+    }
+
+    .desciptionFalcon9 {
+        padding-top: 65%;
+        width: auto;
+    }
+
+    .overViewPosition {
+        padding-top: 55%;
+    }
+}
+
+@media (max-widht: 575px) {
+    * {
+        background-color: black;
+    }
+    .numbers {
+        flex-direction: column;
+    }
+    .desciptionFalcon9 {
+        padding-top: 65%;
+        width: auto;
+    }
+    .merlin {
+        margin-left: 13%;
+        width: 500px;
+        padding-top: 10%;
+    }
 }
