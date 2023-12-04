@@ -78,6 +78,12 @@ li.active a {
   border-bottom: 1px solid #555252;
 }
 
+@media (max-width: 350px) {
+  .logoPc {
+    width: 150px;
+    margin-top: 15px;
+  }
+}
 @media (max-width: 405px) {
   .logoPC {
     width: 180px;
@@ -87,10 +93,47 @@ li.active a {
     font-size: 0.8rem;
   }
 }
-@media (max-width: 350px) {
-  .logoPc {
-    width: 150px;
-    margin-top: 15px;
+@media (max-width: 425px) {
+  .titleContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 80vh;
+  }
+  .titleFalcon9 {
+    font-size: 50px;
+  }
+  .numbers h1 {
+    font-size: 40px;
+  }
+  .numbers p {
+    font-size: 14px;
+  }
+  .desciptionFalcon9 p {
+    width: auto;
+    font-size: 18px;
+    line-height: 30px;
+  }
+  .overViewPosition {
+    display: flex;
+    height: 90vh;
+    flex-direction: column;
+    justify-content: center;
+    width: auto;
+    margin-left: auto;
+  }
+  .titleOverView {
+    font-size: 26px;
+    font-weight: bold;
+  }
+  .subTitleOvewView {
+    font-size: 20px;
+    font-weight: 300;
+  }
+}
+@media (max-width: 510px) {
+  .downloadDesc button {
+    margin: 10px 0px;
   }
 }
 @media (max-width: 750px) {
@@ -101,40 +144,69 @@ li.active a {
     width: auto;
     font-size: 50px;
   }
+  .merlin {
+    margin-left: 13%;
+    width: 500px;
+    padding-top: 10%;
+  }
 }
 @media (max-width: 768px) {
   .numbers {
-    flex-direction: column;
+    padding-top: 0.1rem;
   }
-  .numbers .titleNumb {
-    font-size: 60px;
+  .numbers p.titleNumb {
+    font-size: 65px;
   }
-  .numbers .subTitleNumb {
+  .numbers p.subTitleNumb {
     font-size: 18px;
   }
-  .desciptionFalcon9 {
-    padding-top: 65%;
-    width: auto;
-  }
   .overViewPosition {
-    padding-top: 55%;
+    width: auto;
+    margin-left: 9%;
   }
 }
 @media (max-widht: 575px) {
   * {
     background-color: black;
   }
+  .titllePadding {
+    padding-top: 20px;
+  }
   .numbers {
-    flex-direction: column;
+    height: 60vh;
+  }
+  .numbers p.titleNumb {
+    font-size: 45px;
+  }
+  .numbers p.subTitleNumb {
+    font-size: 18px;
   }
   .desciptionFalcon9 {
-    padding-top: 65%;
+    font-size: auto;
+    padding-top: 15%;
     width: auto;
+  }
+  .overViewPosition {
+    padding-left: auto;
   }
   .merlin {
     margin-left: 13%;
     width: 500px;
     padding-top: 10%;
+  }
+}
+@media (max-width: 1024px) {
+  .numbers p {
+    font-size: 18px;
+  }
+  .desciptionFalcon9 {
+    font-size: 26px;
+  }
+  .overViewPosition {
+    display: block;
+    width: 500px;
+    margin-left: 13%;
+    padding-top: 20%;
   }
 }
 .container00.container01 {
@@ -176,7 +248,7 @@ li.active a {
 
 .desciptionFalcon9 {
   font-size: 22px;
-  width: 640px;
+  width: auto;
   line-height: 50px;
 }
 
