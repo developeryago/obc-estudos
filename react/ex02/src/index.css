@@ -57,6 +57,7 @@ button:focus-visible {
   display: flex;
   width:50rem;
   background-color: rgb(215, 221, 250);
+  margin-top: 2rem;
 }
 .container-txt {
   display: flex;
