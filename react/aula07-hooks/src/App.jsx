@@ -3,7 +3,6 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import useCounter from './hooks/useCounter'
 import './App.css'
-import { useState } from 'react'
 
 function App() {
   const count = useCounter()
