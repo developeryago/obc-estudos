@@ -1,5 +1,5 @@
 function selectNumber() {
-    let number = Math.random()
+    let number = Math.random() * 10
     return number
 }
 
