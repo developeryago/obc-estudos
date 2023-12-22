@@ -42,13 +42,12 @@ function App() {
           </div>
         </div>
 
-        <div id="result">
-        </div>
-        
-
         <div className="buttons">
           <button id="createPassword">Gerar</button>
           <button id="coppyToClipboard">Copiar</button>
+        </div>
+
+        <div id="result">
         </div>
         
       </div>
