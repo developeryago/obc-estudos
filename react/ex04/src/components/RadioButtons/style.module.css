@@ -1,0 +1,12 @@
+.radio-buttons {
+    margin: 2rem;
+  }
+  .radio-buttons .container-radios {
+    padding: 0.3rem;
+    display: flex;
+    justify-content: space-between;
+  }
+  .radio-buttons input {
+    margin-left: 0.8rem;
+    margin-top: 0.2rem;
+  }
