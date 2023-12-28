@@ -27,6 +27,7 @@
     border-radius: 5%;
     padding: 0 1rem;
     border: 1.5px solid $footer-color;
+    color: $bg-color;
 }
 
 .container-title {
@@ -42,19 +43,6 @@
  
 }
 
-.radio-buttons {
-    margin: 2rem;
-    .container-radios {
-        padding: .3rem;
-        display: flex;
-        justify-content: space-between;
-    }
-    input {
-        margin-left: .8rem;
-        margin-top: .2rem;
-    }
-}
-
 .buttons {
     display: flex;
     gap: 1.5rem;
@@ -65,7 +53,8 @@
         padding: .5rem;
         width: 80px;
         border-radius: 1rem;
-        background-color: $buttom-color;
+        background-color: $footer-color;
+        color: white;
         font-size: 1.2rem;
         transition: .5s;
         font-weight: bold;
