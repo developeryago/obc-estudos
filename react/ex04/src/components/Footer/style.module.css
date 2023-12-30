@@ -1,18 +1,14 @@
-footer {
-    text-align: center;
-    color: #0A58CA;
-  }
-  footer div {
-    display: block;
-    text-align: center;
-    font-size: 1.8rem;
-    font-weight: bold;
-    padding: 1rem;
-  }
-  footer a {
-    padding: 0 1rem;
-  }
-  footer a svg {
-    height: 5rem;
-    width: 2rem;
-  }
+
+footer div {
+  display: block;
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+footer a {
+  padding: 0 1rem;
+}
+footer a svg {
+  height: 5rem;
+  width: 2rem;
+}

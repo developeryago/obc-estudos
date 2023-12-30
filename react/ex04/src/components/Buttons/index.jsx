@@ -4,7 +4,6 @@ export default function Buttons() {
     return (
         <div className={style.buttons}>
           <button id="createPassword">Gerar</button>
-          <button id="coppyToClipboard">Copiar</button>
         </div>
     )
 }
