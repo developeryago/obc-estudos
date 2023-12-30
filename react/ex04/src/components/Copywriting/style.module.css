@@ -2,3 +2,21 @@
     text-align: center;
     color: #0A58CA;
 }
+
+@media (min-width: 360px) {
+    .copy p {
+        font-size: 1.1rem;
+    }
+}
+
+@media (min-width: 393px) {
+    .copy p {
+        font-size: 1.5rem;
+    }
+}
+
+@media (min-width:799px) {
+    .copy p {
+        font-size: 2.5rem;
+    }
+}

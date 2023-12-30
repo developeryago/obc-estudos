@@ -8,12 +8,36 @@
     padding: 0.2rem;
     width: 80px;
     border-radius: 1rem;
-    background-color: #0A58CA;
-    color: white;
+    background-color: transparent;
+    border: 1px solid #5F5BD9;
+    color: #5F5BD9;
     font-size: 1.15rem;
     transition: 0.5s;
     font-weight: bold;
   }
   .buttons button:hover {
-    border: 1px solid #00AC47;
+    background-color: #5F5BD9;
+    color: #e3e3e3;
   }
+
+@media (min-width:360px) {
+  .buttons button {
+    padding: 0.5rem;
+    font-size: 1.2rem;
+  }
+}
+
+@media (min-width:392px) {
+  .buttons {
+    padding: 1.2rem;
+  }
+}
+
+@media (min-width:799px) {
+  .buttons {
+    padding: 1.5rem 0 2rem 0;
+  }
+  .buttons button {
+    font-size: 1.3rem;
+  }
+}

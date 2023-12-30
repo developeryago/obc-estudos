@@ -12,3 +12,11 @@ footer a svg {
   height: 5rem;
   width: 2rem;
 }
+
+
+@media (min-width:799px) {
+  footer a svg {
+    height: 10rem;
+    width: 3rem;
+  }
+}

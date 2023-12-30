@@ -4,6 +4,7 @@
   margin: 0;
   font-family: "Roboto", sans-serif;
   font-size: 1.1rem;
+  font-weight: bold;
 }
 
 .body {
@@ -18,42 +19,29 @@
 .container {
   width: 300px;
   margin: 0 auto;
-  background-color: white;
+  background-color: #e3e3e3;
   margin: 1rem 0;
   border-radius: 5%;
   padding: 0 1rem;
-  border: 1.5px solid #0A58CA;
-  color: #51AEED;
+  border: 1.5px solid #5F5BD9;
+  color: #5F5BD9;
 }
 
-div.value {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 0.5rem;
+
+@media (min-width: 360px) {
+  .body {
+    height: 100vh;
+  }
+  .container {
+    margin: 1.3rem;
+    width: 330px;
+  }
 }
-div.value input {
-  border-radius: 0.5rem;
-  display: block;
-  font-size: 1.75rem;
-  margin: 0 auto;
-  text-align: end;
-  width: 100%;
-}
-div.value #copyToClipboard {
-  background-color: transparent;
-  border: solid #51AEED;
-  border-width: 1px;
-  border-radius: 0 0.5rem 0.5rem 0;
-  color: #0A58CA;
-  cursor: pointer;
-  display: block;
-  height: 2.75rem;
-  width: 6rem;
-}
-div.value #result {
-  border-width: 1px 1px 1px 0;
-  border-radius: 0.5rem 0rem 0rem 0.5rem;
+@media (min-width: 799px) {
+  .container {
+    width: 500px;
+    margin: 2.5rem;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

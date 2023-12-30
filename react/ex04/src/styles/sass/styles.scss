@@ -6,6 +6,7 @@
     margin: 0;
     font-family: 'Roboto', sans-serif;
     font-size: 1.1rem;
+    font-weight: bold;
 }
 
 .body {
@@ -21,12 +22,12 @@
     // height: 75vh;
     width: 300px;
     margin: 0 auto;
-    background-color: white;
+    background-color: #e3e3e3;
     margin: 1rem 0;
     border-radius: 5%;
     padding: 0 1rem;
-    border: 1.5px solid $footer-color;
-    color: $bg-color;
+    border: 1.5px solid $principal-color;
+    color: $principal-color;
 }
 
 div.value {
@@ -44,10 +45,10 @@ div.value {
     }
     #copyToClipboard {
         background-color: transparent;
-        border: solid $bg-color;
+        border: solid $principal-color;
         border-width: 1px;
         border-radius: 0 .5rem .5rem 0;
-        color: $footer-color;
+        color: $principal-color;
         cursor: pointer;
         display: block;
         height: 2.75rem;
@@ -61,3 +62,30 @@ div.value {
     
 }
 
+@media (min-width:360px){
+    .body {
+        height: 100vh;
+    }
+    .container {
+        margin: 1.3rem;
+        width: 330px;
+    }
+    div.value {
+        #copyToClipboard{
+            font-size: 1.2rem;
+        }
+    }
+}
+
+@media (min-width:799px) {
+    .container {
+        width: 500px;
+        margin: 2.5rem;
+    }
+    div.value {
+        margin-bottom: 2rem;
+        #copyToClipboard {
+            font-size: 1.2rem;
+        }
+    }
+}

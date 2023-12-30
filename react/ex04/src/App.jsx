@@ -3,6 +3,7 @@ import Title from "./components/Title"
 import { Description } from "./components/Description"
 import RadioButtons from "./components/RadioButtons"
 import Buttons from "./components/Buttons"
+import Value from "./components/Value"
 import Footer from "./components/Footer"
 import Copywriting from "./components/Copywriting"
 
@@ -21,11 +22,7 @@ function App() {
 
         <Buttons></Buttons>
 
-
-        <div class="value">
-          <input type="text" id="result" disabled/>
-          <button id="copyToClipboard">Copy</button>
-        </div>
+        <Value></Value>
         
       </div>
       
