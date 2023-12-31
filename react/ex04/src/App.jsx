@@ -1,4 +1,3 @@
-import Interface from "./components/Interface"
 import Title from "./components/Title"
 import { Description } from "./components/Description"
 import RadioButtons from "./components/RadioButtons"
@@ -6,9 +5,9 @@ import Buttons from "./components/Buttons"
 import Value from "./components/Value"
 import Footer from "./components/Footer"
 import Copywriting from "./components/Copywriting"
-
+import { useState } from "react"
 function App() {
-
+  
   return (
     <>
     <div className="body">
@@ -23,7 +22,7 @@ function App() {
         <Buttons></Buttons>
 
         <Value></Value>
-        
+
       </div>
       
       <Copywriting/>
