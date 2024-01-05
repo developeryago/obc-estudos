@@ -6,21 +6,18 @@ import randomAlphanumeric from "../../modules/randomAlphanumeric"
 
 export default function RadioButtons(pros) {
 
-    
-
- 
-  const onChange = (ev) => {
-    const { value, type, checked} = ev.target
-    let res = type === "checkbox" ? checked : value
-    if (res === "num") {
-      props.setPassword(randomNumber())
-    } else if (res === "str") {
-      setPassword(randomString())
-    } else if (res === "alphaNum") {
-      setPassword(randomAlphanumeric())
+    const onChange = (ev) => {
+        const { value, type, checked} = ev.target
+        let res = type === "checkbox" ? checked : value
+        if (res === "num") {
+        props.setPassword(randomNumber())
+        } else if (res === "str") {
+        setPassword(randomString())
+        } else if (res === "alphaNum") {
+        setPassword(randomAlphanumeric())
+        }
+        return res
     }
-    return res
-  }
 
     return <div className={style.radioButtons}>
 
