@@ -15,19 +15,18 @@
     align-items: center;
     justify-content: space-between;
     margin: 0 auto;
-    background-image: linear-gradient($bg-color, $bg-color2);
+    background-color: #232323;
 }
 
 .container {
-    // height: 75vh;
     width: 300px;
     margin: 0 auto;
-    background-color: #e3e3e3;
+    background-color: #272727;
     margin: 1rem 0;
     border-radius: 5%;
     padding: 0 1rem;
-    border: 1.5px solid $principal-color;
-    color: $principal-color;
+    border: 1.5px solid #fbf7f7cf;
+    color: #fbf7f7cf;
 }
 
 div.value {

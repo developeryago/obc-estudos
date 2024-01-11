@@ -1,3 +1,5 @@
+@import "../../styles/sass/variables/variables.scss";
+
 div.value {
     display: flex;
     align-items: center;
@@ -7,17 +9,21 @@ div.value {
   div.value input {
     border-radius: 0.5rem;
     display: block;
+    font-family: monospace;
     font-size: 1.75rem;
+    font-weight: bolder;
     margin: 0 auto;
-    text-align: end;
+    text-align: center;
+    
     width: 100%;
+    color: #fbf7f7cf;
   }
   div.value #copyToClipboard {
     background-color: transparent;
-    border: solid #5F5BD9;
+    border: solid #fbf7f7cf;
     border-width: 1px;
     border-radius: 0 0.5rem 0.5rem 0;
-    color: #5F5BD9;
+    color: #fbf7f7cf;
     cursor: pointer;
     display: block;
     height: 2.75rem;
