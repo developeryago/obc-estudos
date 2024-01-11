@@ -28,6 +28,10 @@ div.value {
     display: block;
     height: 2.75rem;
     width: 6rem;
+    &:hover {
+      border-color: $footer-color;
+      color: $footer-color;
+    }
   }
   div.value #result {
     border-width: 1px 1px 1px 0;

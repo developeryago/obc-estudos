@@ -1,6 +1,8 @@
+@import "../../styles/sass/variables/variables.scss";
+
 .copy {
     text-align: center;
-    color: #0A58CA;
+    color: $principal-color;
 }
 
 @media (min-width: 360px) {
