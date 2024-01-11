@@ -1,3 +1,5 @@
+@import "../../styles/sass/variables/variables.scss";
+
 .radioButtons {
     margin: .5rem;
   }
@@ -14,6 +16,15 @@
 label {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-weight: bold;
+  transition: .5s;
+  &:hover {
+    cursor: pointer;
+    color: $footer-color;
+  }
+}
+
+.sucsses {
+  color: $copy-color;
 }
 
 @media (min-width: 360px) {

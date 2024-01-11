@@ -3,6 +3,10 @@
 .copy {
     text-align: center;
     color: $principal-color;
+    transition: .5s;
+    &:hover {
+        color: $footer-color;
+    }
 }
 
 @media (min-width: 360px) {

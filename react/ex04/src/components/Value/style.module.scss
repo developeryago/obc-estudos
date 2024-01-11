@@ -28,10 +28,15 @@ div.value {
     display: block;
     height: 2.75rem;
     width: 6rem;
+    transition: .5s;
     &:hover {
       border-color: $footer-color;
       color: $footer-color;
     }
+  }
+  .sucsses {
+    color: $copy-color;
+    border-color: $copy-color;
   }
   div.value #result {
     border-width: 1px 1px 1px 0;

@@ -27,39 +27,12 @@
     padding: 0 1rem;
     border: 1.5px solid $principal-color;
     color: $principal-color;
+    transition: .5s;
+    &:hover {
+        border-color: $footer-color;
+    }
 }
 
-div.value {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: .5rem;
-    input {
-        border-radius: .5rem;
-        display: block;
-        font-size: 1.75rem;
-        margin: 0 auto;
-        text-align: end;
-        width: 100%;
-    }
-    #copyToClipboard {
-        background-color: transparent;
-        border: solid $principal-color;
-        border-width: 1px;
-        border-radius: 0 .5rem .5rem 0;
-        color: $principal-color;
-        cursor: pointer;
-        display: block;
-        height: 2.75rem;
-        width: 6rem;
-      }
-     
-    #result {
-        border-width: 1px 1px 1px 0;
-        border-radius: .5rem 0rem 0rem .5rem;
-    }
-    
-}
 
 @media (min-width:360px){
     .body {
@@ -69,22 +42,11 @@ div.value {
         margin: 1.3rem;
         width: 330px;
     }
-    div.value {
-        #copyToClipboard{
-            font-size: 1.2rem;
-        }
-    }
 }
 
 @media (min-width:799px) {
     .container {
         width: 500px;
         margin: 2.5rem;
-    }
-    div.value {
-        margin-bottom: 2rem;
-        #copyToClipboard {
-            font-size: 1.2rem;
-        }
     }
 }

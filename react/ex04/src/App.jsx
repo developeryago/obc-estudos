@@ -8,11 +8,7 @@ import { useState } from "react"
 
 function App() {
   const [password, setPassword] = useState("")
-
-  
-
-
-
+  const [copyText, setCopyText] = useState("Copiar")
   return (
     <>
     <div className="body">
@@ -27,8 +23,10 @@ function App() {
       </RadioButtons>
         
       <Value
-      value={password}>
-      </Value>
+      value={password}
+      copyText={copyText}
+      setCopyText={setCopyText}
+      password={password}></Value>
 
       </div>
       

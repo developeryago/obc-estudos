@@ -1,4 +1,4 @@
-import style from "./style.module.css"
+import style from "./style.module.scss"
 import randomNumber from "../../modules/randomNumber"
 import randomString from "../../modules/randomString"
 import randomAlphanumeric from "../../modules/randomAlphanumeric"
