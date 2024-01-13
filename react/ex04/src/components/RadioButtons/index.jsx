@@ -10,11 +10,11 @@ export default function RadioButtons(props) {
         let res = type === "checkbox" ? checked : value
         if (res === "num") {
             console.log(res)
-        props.setPassword(randomNumber())
+        props.setPassword(randomNumber(props.passwordSize))
         } else if (res === "str") {
-        props.setPassword(randomString())
+        props.setPassword(randomString(props.passwordSize))
         } else if (res === "alphaNum") {
-        props.setPassword(randomAlphanumeric())
+        props.setPassword(randomAlphanumeric(props.passwordSize))
         }
         props.setCopyText("Copiar")
         return res
