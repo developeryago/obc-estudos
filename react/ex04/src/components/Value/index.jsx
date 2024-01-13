@@ -1,10 +1,15 @@
+import { useState } from "react"
 import style from "./style.module.scss"
 
 export default function Value(props) {
-    
-    function copyToClipboard(ev) {
-        const btn = ev.currentTarget
+    const [copieted, setSwitchClass] = useState("")
+
+
+
+    function copyToClipboard() {
+        setSwitchClass("sucsses")
         props.setCopyText("Copiado")
+
         window.navigator.clipboard.writeText(props.password)
       }
 	
@@ -17,7 +22,10 @@ export default function Value(props) {
             disabled/>
             <button 
             id={style.copyToClipboard}
-            onClick={copyToClipboard}>{props.copyText}</button>
+            onClick={copyToClipboard}
+            className={copieted}>
+            {props.copyText}
+            </button>
         </div>
     )
 }

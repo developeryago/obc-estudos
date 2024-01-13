@@ -1,58 +1,58 @@
 @import "../../styles/sass/variables/variables.scss";
 
 div.value {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+div.value input {
+  border-radius: 0.5rem;
+  display: block;
+  font-family: monospace;
+  font-size: 1.75rem;
+  font-weight: bolder;
+  margin: 0 auto;
+  text-align: center;
+  
+  width: 100%;
+  color: #fbf7f7cf;
+}
+div.value #copyToClipboard {
+  background-color: transparent;
+  border: solid #fbf7f7cf;
+  border-width: 1px;
+  border-radius: 0 0.5rem 0.5rem 0;
+  color: #fbf7f7cf;
+  cursor: pointer;
+  display: block;
+  height: 2.75rem;
+  width: 6rem;
+  transition: .5s;
+  &:hover {
+    border-color: $footer-color;
+    color: $footer-color;
   }
-  div.value input {
-    border-radius: 0.5rem;
-    display: block;
-    font-family: monospace;
-    font-size: 1.75rem;
-    font-weight: bolder;
-    margin: 0 auto;
-    text-align: center;
-    
-    width: 100%;
-    color: #fbf7f7cf;
+}
+button.sucsses {
+  color: $copy-color;
+  border-color: $copy-color;
+}
+div.value #result {
+  border-width: 1px 1px 1px 0;
+  border-radius: 0.5rem 0rem 0rem 0.5rem;
+}
+
+@media (min-width: 360px) {
+  div.value #copyToClipboard {
+    font-size: 1.2rem;
+  }
+}
+@media (min-width: 799px) {
+  div.value {
+    margin-bottom: 2rem;
   }
   div.value #copyToClipboard {
-    background-color: transparent;
-    border: solid #fbf7f7cf;
-    border-width: 1px;
-    border-radius: 0 0.5rem 0.5rem 0;
-    color: #fbf7f7cf;
-    cursor: pointer;
-    display: block;
-    height: 2.75rem;
-    width: 6rem;
-    transition: .5s;
-    &:hover {
-      border-color: $footer-color;
-      color: $footer-color;
-    }
+    font-size: 1.2rem;
   }
-  .sucsses {
-    color: $copy-color;
-    border-color: $copy-color;
-  }
-  div.value #result {
-    border-width: 1px 1px 1px 0;
-    border-radius: 0.5rem 0rem 0rem 0.5rem;
-  }
-  
-  @media (min-width: 360px) {
-    div.value #copyToClipboard {
-      font-size: 1.2rem;
-    }
-  }
-  @media (min-width: 799px) {
-    div.value {
-      margin-bottom: 2rem;
-    }
-    div.value #copyToClipboard {
-      font-size: 1.2rem;
-    }
-  }
+}
