@@ -16,6 +16,7 @@ export default function RadioButtons(props) {
         } else if (res === "alphaNum") {
         props.setPassword(randomAlphanumeric())
         }
+        props.setCopyText("Copiar")
         return res
     }
 

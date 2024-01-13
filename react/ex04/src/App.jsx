@@ -19,7 +19,8 @@ function App() {
       <Description></Description>
 
       <RadioButtons 
-      setPassword={setPassword}>        
+      setPassword={setPassword}
+      setCopyText={setCopyText}>        
       </RadioButtons>
         
       <Value
