@@ -1,17 +1,41 @@
 import { useState } from 'react'
 import './App.css'
+import removeGame from '../modules/removeGame'
 
 function App() {
   const [title, setTitle] = useState("")
   const [cover, setCover] = useState("")
-  const [game, setGame] = useState([])
+  const [games, setGame] = useState(() => {
+    const storageGames = localStorage.getItem("obc-game-lib")
+    const gameArray = JSON.parse(storageGames)
+    return gameArray
+  })
 
+  const addGame = ({title, cover}) => {
+    const id = Math.floor(Math.random() * 1000000)
+    const game = {id, title, cover}
+    setGame(state => {
+      const newState = [game, ...state]
+      localStorage.setItem("obc-game-lib", JSON.stringify(newState))
+      return newState
+    })
+  
+  }
+
+  function removeGame(id) {
+    setGame(state => {
+      const newState = state.filter(game => game.id !== id)
+      localStorage.setItem("obc-game-lib", JSON.stringify(newState))
+      return newState
+    })
+}
   const handleSubmit = (ev) => {
     ev.preventDefault()
-    console.log({title, cover})
+    addGame({title, cover})
     setTitle("")
     setCover("")
   }
+
   return (
     <>
       <div id="app">
@@ -39,6 +63,19 @@ function App() {
           type='submit'
           >Adicionar a biblioteca</button>
         </form>
+        <div className="games">
+          {games.map((game) => (
+            <div key={game.id}>
+              <img src={game.cover} alt="" />
+              <div>
+                <h2>{game.title}</h2>
+                <button
+                onClick={() => removeGame(game.id)}>Remover</button>
+              </div>
+            </div>
+            
+          ))}
+        </div>
       </div>
     </>
   )

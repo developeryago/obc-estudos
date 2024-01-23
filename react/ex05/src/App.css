@@ -78,7 +78,7 @@ input, button {
   display: flex;
   align-items: start;
   gap: 2rem;
-  height: 8rem;
+  height: 12rem;
   margin-top: 2rem;
   width: 28rem;
 }
