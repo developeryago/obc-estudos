@@ -1,0 +1,46 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 1rem;
+  text-align: center;
+
+}
+
+body {
+  background-color: #232323;
+  color: white;
+}
+.app {
+  border: .5px solid white;
+  border-radius: 2rem;
+  padding: 1rem;
+  margin: 1rem 0;
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem 0 auto;
+}
+label {
+  margin: 0 1rem 0 0;
+}
+input {
+  width: 14.7rem;
+}
+.button {
+  margin: 2rem 0;
+  display: flex;
+  justify-content: right;
+}
+
+.comments {
+  display: flex;
+  flex-direction: column;
+  h5 {
+    font-size: 1rem;
+    align-items: end;
+  }
+  div {
+
+  }
+}
