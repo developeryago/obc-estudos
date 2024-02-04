@@ -64,14 +64,6 @@ function App() {
         
       </div>
 
-      <div className='comments'>
-        {comments.map((comment) => (
-          <div key={comment.id}>
-            <h5 >{comment.email} {comment.hour}</h5>
-            <p>{comment.text}</p>
-          </div>
-        ))}
-      </div>
     </>
   )
 }
