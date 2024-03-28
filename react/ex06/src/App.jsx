@@ -16,7 +16,7 @@ function App() {
     setText("")
     setEmail("")
   }
-
+    
   const addComment = ({email, text}) => {
     const id = Math.floor(Math.random() * 1000000)
     const hour = new Date().getDate
