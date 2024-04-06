@@ -1,11 +1,6 @@
-import { Link, useParams } from "react-router-dom";
+import { Link, useLoaderData, useParams } from "react-router-dom";
 export default function Product() {
-    const { productId} = useParams()
-
-   
-    if (!product) {
-        return <h2>Ops.. esse produto não foi encontrado</h2>
-    }
+    const product = useLoaderData()
     return (
         <section>
         <Link to="/products"><button>Voltar</button></Link>

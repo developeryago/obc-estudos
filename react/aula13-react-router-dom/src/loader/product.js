@@ -1,4 +1,4 @@
-import products from "../../database.json"
+import products from "../database.json"
 
 
 export default function loaderProduct({ params}) {
